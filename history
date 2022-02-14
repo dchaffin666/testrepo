@@ -1,0 +1,15 @@
+git clone https://github.com/dchaffin666/testrepo
+cd testrepo
+git init --initial-branch=main
+vi jupiter.txt
+git add jupiter.txt
+git commit
+git status
+git remote rename origin old-origin
+git remote add origin https://gitlab.com/djchaffin1/testrepo
+git push -u origin --all
+git remote rename origin lab-origin
+git remote rename old-origin hub-origin
+git remote add origin https://gitlab-hpc.hpc.uark.edu/dchaffin
+git push -u origin --all
+fatal: unable to access 'https://gitlab-hpc.hpc.uark.edu/dchaffin/': SSL certificate problem: self signed certificate
